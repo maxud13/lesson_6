@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *pushmeButton;
 @property (nonatomic,strong) NSTimer *timer;
 //для объявления таймера
@@ -18,7 +18,6 @@
 @end
 
 @implementation ViewController
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -68,6 +67,24 @@
     [self timer];
     
     self.pushmeButton.enabled = NO;
+}
+#pragma mark - Text Field Delegeta
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+ - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if (textField.text.length + string.length > 5)
+    {
+        [self.pushmeButton setTitle:@"MAx length must be 5" forState:UIControlStateNormal];
+        return NO;
+    }
+    [self.pushmeButton setTitle:[NSString stringWithFormat:@"%@%@",textField.text,string] forState:(UIControlStateNormal)];
+    
+    return YES;
 }
 
 //{
