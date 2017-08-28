@@ -15,6 +15,7 @@
 		6A020B3B1F508292007D37A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A020B391F508292007D37A6 /* LaunchScreen.storyboard */; };
 		6A020B461F508292007D37A6 /* lesson_6Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A020B451F508292007D37A6 /* lesson_6Tests.m */; };
 		6A020B511F508292007D37A6 /* lesson_6UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A020B501F508292007D37A6 /* lesson_6UITests.m */; };
+		6A0D14B61F547E17005C8523 /* CoffeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D14B51F547E17005C8523 /* CoffeeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		6A020B4C1F508292007D37A6 /* lesson_6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lesson_6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A020B501F508292007D37A6 /* lesson_6UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lesson_6UITests.m; sourceTree = "<group>"; };
 		6A020B521F508292007D37A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A0D14B41F547E17005C8523 /* CoffeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeViewController.h; sourceTree = "<group>"; };
+		6A0D14B51F547E17005C8523 /* CoffeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				6A020B391F508292007D37A6 /* LaunchScreen.storyboard */,
 				6A020B3C1F508292007D37A6 /* Info.plist */,
 				6A020B2B1F508292007D37A6 /* Supporting Files */,
+				6A0D14B41F547E17005C8523 /* CoffeeViewController.h */,
+				6A0D14B51F547E17005C8523 /* CoffeeViewController.m */,
 			);
 			path = lesson_6;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0D14B61F547E17005C8523 /* CoffeeViewController.m in Sources */,
 				6A020B331F508292007D37A6 /* ViewController.m in Sources */,
 				6A020B301F508292007D37A6 /* AppDelegate.m in Sources */,
 				6A020B2D1F508292007D37A6 /* main.m in Sources */,
@@ -509,6 +515,7 @@
 				6A020B571F508292007D37A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A020B581F508292007D37A6 /* Build configuration list for PBXNativeTarget "lesson_6Tests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +524,7 @@
 				6A020B5A1F508292007D37A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A020B5B1F508292007D37A6 /* Build configuration list for PBXNativeTarget "lesson_6UITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +533,7 @@
 				6A020B5D1F508292007D37A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
